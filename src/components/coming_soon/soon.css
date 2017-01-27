@@ -51,6 +51,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 	opacity: 0;
 }
 
+@media screen and (max-width: 1000px){
+#silicon{
+	margin-top: 0%;
+	font-size: 60px;
+	font-weight: 100;
+	color:white;
+	opacity: 0;
+}
+#trend{
+	font-weight: 100;
+	font-size: 20px;
+	color: white;
+	opacity: 0;
+}
+}
+
 
 
 
