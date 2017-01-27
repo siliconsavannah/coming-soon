@@ -8,7 +8,10 @@
 	width: 100vw;
 }
 .overlay{
-	background-color: rgba(12,12,0,0.8);
+	background: -moz-linear-gradient(-45deg,  rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.3) 100%);
+background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 100%);
+background: linear-gradient(135deg,  rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.3) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
 	height: 100%;
 	width: 100%;
 }
@@ -19,11 +22,40 @@
 }
 
 /*divider*/
-.divider{
+#divider{
 	margin-top: 20%;
-	margin-left: 35%; 
+	float: right;
+	margin-left: -20%;
 	width:2px;
-	height: 400px;
-	background-color: white;
-
+	height: 0px;
+	background-color: rgba(0,0,0,0);
 }
+
+/*Text*/
+.logo{
+	margin-top: 10%;
+	height: 20%;
+	width:20%;
+}
+#silicon{
+	margin-top: 0%;
+	font-size: 110px;
+	font-weight: 100;
+	color:white;
+	opacity: 0;
+}
+#trend{
+	font-weight: 100;
+	font-size: 30px;
+	color: white;
+	opacity: 0;
+}
+
+
+
+
+
+
+
+
+

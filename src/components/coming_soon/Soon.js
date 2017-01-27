@@ -1,20 +1,17 @@
 import React, { Component } from 'react'
+import { TweenLite } from 'gsap'
 import { Grid, Row, Col } from 'react-bootstrap'
 
 import './soon.css'
 
 export default class Soon extends Component {
-	constructor(props) {
-		super(props)
-		this.state = {
-			divider: {
-					"marginTop": 20,
-					"marginLeft": 35,
-					"width":2,
-					"height": 400,
-					"backgroundColor": "white"
-			} 
-		}
+	componentDidMount() {
+		const divider = document.getElementById("divider")
+		const silicon = document.getElementById("silicon")
+		const trend = document.getElementById("trend")
+		TweenLite.to(divider, 2, { height: "400px", backgroundColor: "white" })
+		TweenLite.to(silicon, 2, { opacity:"1", marginTop:"10%" })
+		TweenLite.to(trend, 2, { opacity:"1" })
 	}
 
 	render() {
@@ -24,11 +21,12 @@ export default class Soon extends Component {
 					<div className="pattern">
 						<Grid>
 							<Row>
-								<Col xsHidden md={4}>
-									<div style={this.state.divider}/>
+								<Col xs={2} md={3}>
+									<div id="divider"/>
 								</Col>
-      					<Col xs={12} md={8}>
-
+      					<Col xs={10} md={9}>
+									<p id="silicon">Coming Soon</p>
+									<p id="trend">Get all the Latest Tech news from Sub-Saharan Africa</p>
       					</Col>
 							</Row>
 						</Grid>
